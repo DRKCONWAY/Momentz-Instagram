@@ -499,7 +499,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-zT-sCs">
-                                                    <rect key="frame" x="8" y="7" width="85.5" height="30"/>
+                                                    <rect key="frame" x="8" y="7" width="86" height="30"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-twitter" translatesAutoresizingMaskIntoConstraints="NO" id="nEp-0C-IDd">
                                                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -509,7 +509,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-cc-NYw">
-                                                            <rect key="frame" x="35" y="0.0" width="50.5" height="30"/>
+                                                            <rect key="frame" x="35" y="0.0" width="51" height="30"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -910,7 +910,7 @@
                                     <rect key="frame" x="115" y="8" width="145" height="110"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="1Rr-2P-yhc">
-                                            <rect key="frame" x="37.5" y="0.0" width="70" height="70"/>
+                                            <rect key="frame" x="38" y="0.0" width="70" height="70"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="70" id="9g6-mq-3xH"/>
                                                 <constraint firstAttribute="width" constant="70" id="Nzf-Af-F9L"/>
