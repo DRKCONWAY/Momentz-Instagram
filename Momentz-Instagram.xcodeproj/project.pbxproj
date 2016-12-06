@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		031157141DF4D7B2005A94DD /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031157131DF4D7B2005A94DD /* FirebaseReference.swift */; };
+		031157181DF4E6D5005A94DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031157171DF4E6D5005A94DD /* User.swift */; };
+		036183AC1DF659A000F24D2D /* FIR Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036183AB1DF659A000F24D2D /* FIR Image.swift */; };
 		038D57E81DF4D5CA000ABB51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 038D57E71DF4D5CA000ABB51 /* GoogleService-Info.plist */; };
 		03FE838A1DF3864600D03961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE83891DF3864600D03961 /* AppDelegate.swift */; };
 		03FE838F1DF3864600D03961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FE838D1DF3864600D03961 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		031157131DF4D7B2005A94DD /* FirebaseReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		031157171DF4E6D5005A94DD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		036183AB1DF659A000F24D2D /* FIR Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FIR Image.swift"; sourceTree = "<group>"; };
 		038D57E71DF4D5CA000ABB51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03FE83861DF3864600D03961 /* Momentz-Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Momentz-Instagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FE83891DF3864600D03961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031157151DF4E6A2005A94DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				031157131DF4D7B2005A94DD /* FirebaseReference.swift */,
+				031157171DF4E6D5005A94DD /* User.swift */,
+				036183AB1DF659A000F24D2D /* FIR Image.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		031157161DF4E6B7005A94DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03FE838D1DF3864600D03961 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		03FE837D1DF3864600D03961 = {
 			isa = PBXGroup;
 			children = (
@@ -64,12 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				03FE83891DF3864600D03961 /* AppDelegate.swift */,
-				03FE838D1DF3864600D03961 /* Main.storyboard */,
+				031157151DF4E6A2005A94DD /* Model */,
+				031157161DF4E6B7005A94DD /* View */,
 				03FE83901DF3864600D03961 /* Assets.xcassets */,
 				03FE83921DF3864600D03961 /* LaunchScreen.storyboard */,
 				03FE83951DF3864600D03961 /* Info.plist */,
 				038D57E71DF4D5CA000ABB51 /* GoogleService-Info.plist */,
-				031157131DF4D7B2005A94DD /* FirebaseReference.swift */,
 			);
 			path = "Momentz-Instagram";
 			sourceTree = "<group>";
@@ -218,6 +240,8 @@
 			files = (
 				031157141DF4D7B2005A94DD /* FirebaseReference.swift in Sources */,
 				03FE838A1DF3864600D03961 /* AppDelegate.swift in Sources */,
+				036183AC1DF659A000F24D2D /* FIR Image.swift in Sources */,
+				031157181DF4E6D5005A94DD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
