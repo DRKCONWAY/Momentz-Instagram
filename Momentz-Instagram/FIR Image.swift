@@ -3,7 +3,7 @@
 //  Momentz-Instagram
 //
 //  Created by D on 12/5/16.
-//  Copyright © 2016 D Conway. All rights reserved.
+//  Copyright © 2016 D Conway. All rights are reserved.
 //
 
 import Foundation
