@@ -50,8 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				031157131DF4D7B2005A94DD /* FirebaseReference.swift */,
-				031157171DF4E6D5005A94DD /* User.swift */,
 				036183AB1DF659A000F24D2D /* FIR Image.swift */,
+				031157171DF4E6D5005A94DD /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";

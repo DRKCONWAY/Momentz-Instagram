@@ -35,7 +35,38 @@ class User {
         
     }
     
-    func save() {
+    init(dictionary: [String: Any]) {
+        
+        uid = dictionary["uid"] as! String
+        username = dictionary["username"] as! String
+        fullName = dictionary["fullName"] as! String
+        bio = dictionary["bio"] as! String
+        website = dictionary["website"] as! String
+        
+        // follows
+        self.follows = []
+        if let followsDict = dictionary["follows"] as? [String: Any] {
+            
+            for (_, userDict) in followsDict {
+                if let userDict = userDict as? [String: Any] {
+                    self.follows.append(User(dictionary: userDict))
+                }
+            }
+        }
+        
+        // followedBy
+        self.followedBy = []
+        if let followedByDict = dictionary["followedBy"] as? [String: Any] {
+            
+            for (_, userDict) in followedByDict {
+                if let userDict = userDict as? [String: Any] {
+                    self.follows.append(User(dictionary: userDict))
+                }
+            }
+        }
+    }
+    
+    func save(completion: @escaping (Error?) -> Void) {
         
         // 1st step
         let ref = DatabaseReference.users(uid: uid).reference()
@@ -53,7 +84,12 @@ class User {
         }
         
         // save save the profile image
-        
+        if let profileImage = self.profileImage {
+            let firImage = FIRImage(image: profileImage)
+            firImage.saveProfileImage(self.uid, { (error) in
+                completion(error)
+            })
+        }
     }
     
     // saving the user to Firebase
