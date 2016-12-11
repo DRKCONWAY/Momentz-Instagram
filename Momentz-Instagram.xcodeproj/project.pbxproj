@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		031157141DF4D7B2005A94DD /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031157131DF4D7B2005A94DD /* FirebaseReference.swift */; };
 		031157181DF4E6D5005A94DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031157171DF4E6D5005A94DD /* User.swift */; };
+		033E8A511DFA5F050004D46D /* Image Picker Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033E8A501DFA5F050004D46D /* Image Picker Helper.swift */; };
 		036183AC1DF659A000F24D2D /* FIR Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036183AB1DF659A000F24D2D /* FIR Image.swift */; };
 		038D57E81DF4D5CA000ABB51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 038D57E71DF4D5CA000ABB51 /* GoogleService-Info.plist */; };
+		039320AE1DFA532D0035A156 /* NewsfeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039320AD1DFA532D0035A156 /* NewsfeedVC.swift */; };
+		039320B01DFA53AE0035A156 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039320AF1DFA53AE0035A156 /* SignupVC.swift */; };
+		039320B21DFA542A0035A156 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039320B11DFA542A0035A156 /* WelcomeVC.swift */; };
 		03FE838A1DF3864600D03961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE83891DF3864600D03961 /* AppDelegate.swift */; };
 		03FE838F1DF3864600D03961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FE838D1DF3864600D03961 /* Main.storyboard */; };
 		03FE83911DF3864600D03961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FE83901DF3864600D03961 /* Assets.xcassets */; };
@@ -21,8 +25,12 @@
 /* Begin PBXFileReference section */
 		031157131DF4D7B2005A94DD /* FirebaseReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		031157171DF4E6D5005A94DD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		033E8A501DFA5F050004D46D /* Image Picker Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image Picker Helper.swift"; sourceTree = "<group>"; };
 		036183AB1DF659A000F24D2D /* FIR Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FIR Image.swift"; sourceTree = "<group>"; };
 		038D57E71DF4D5CA000ABB51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		039320AD1DFA532D0035A156 /* NewsfeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedVC.swift; sourceTree = "<group>"; };
+		039320AF1DFA53AE0035A156 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		039320B11DFA542A0035A156 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		03FE83861DF3864600D03961 /* Momentz-Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Momentz-Instagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FE83891DF3864600D03961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03FE838E1DF3864600D03961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,8 +68,20 @@
 			isa = PBXGroup;
 			children = (
 				03FE838D1DF3864600D03961 /* Main.storyboard */,
+				033E8A501DFA5F050004D46D /* Image Picker Helper.swift */,
+				039320AC1DFA52E00035A156 /* Controller */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		039320AC1DFA52E00035A156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				039320AD1DFA532D0035A156 /* NewsfeedVC.swift */,
+				039320B11DFA542A0035A156 /* WelcomeVC.swift */,
+				039320AF1DFA53AE0035A156 /* SignupVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		03FE837D1DF3864600D03961 = {
@@ -238,10 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039320B01DFA53AE0035A156 /* SignupVC.swift in Sources */,
 				031157141DF4D7B2005A94DD /* FirebaseReference.swift in Sources */,
 				03FE838A1DF3864600D03961 /* AppDelegate.swift in Sources */,
 				036183AC1DF659A000F24D2D /* FIR Image.swift in Sources */,
 				031157181DF4E6D5005A94DD /* User.swift in Sources */,
+				033E8A511DFA5F050004D46D /* Image Picker Helper.swift in Sources */,
+				039320B21DFA542A0035A156 /* WelcomeVC.swift in Sources */,
+				039320AE1DFA532D0035A156 /* NewsfeedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
